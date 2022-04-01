@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:m2/components/drawer.dart';
-import 'package:m2/components/exercices/exercice_1.dart';
-import 'package:m2/components/exercices/exercice_2.dart';
+// import 'package:m2/components/exercices/exercice_1.dart';
+// import 'package:m2/components/exercices/exercice_2.dart';
+import 'package:m2/components/exercices/exercice_7.dart';
 import 'package:m2/components/list.dart';
+import 'package:m2/components/carousel/index.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -17,8 +19,9 @@ class _MyHomePageState extends State<MyHomePage> {
   int index = 0;
 
   List<Widget> list = [
-    const Exercice1(),
-    const Exercice2(),
+    // const Exercice1(),
+    CarouselImages(),
+    const Exercice7(),
     const CustomList(),
   ];
 
